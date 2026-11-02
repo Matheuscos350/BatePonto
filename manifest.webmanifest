@@ -1,0 +1,22 @@
+{
+  "name": "Ponto Eletrônico",
+  "short_name": "Ponto",
+  "description": "Ponto com GPS e foto, relatórios de horas e relatório de gastos.",
+  "lang": "pt-BR",
+  "start_url": "./index.php?src=pwa",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f6f9",
+  "theme_color": "#1f5eff",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Bater ponto", "url": "./punch.php", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Relatório de Gastos", "url": "./gastos.php", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

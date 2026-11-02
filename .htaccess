@@ -1,0 +1,12 @@
+# Bloqueia acesso direto ao banco e às fotos (as fotos são servidas por photo.php)
+RedirectMatch 403 ^/?.*/(data|uploads)/
+Options -Indexes
+
+# App instalável (PWA)
+AddType application/manifest+json .webmanifest
+<IfModule mod_headers.c>
+  <Files "sw.js">
+    Header set Cache-Control "no-cache"
+    Header set Service-Worker-Allowed "/"
+  </Files>
+</IfModule>
